@@ -26,5 +26,6 @@ public class Medico {
     @Enumerated(EnumType.STRING)
     private Especialidade especialidade;
 
-    @ExtensionMethod
+    @Embedded
     private Endereco endereco;
+}
