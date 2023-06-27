@@ -1,7 +1,7 @@
 package com.starwars.rebels_api.service;
 
 import com.starwars.rebels_api.modelo.Relatorio;
-import com.starwars.rebels_api.repository.IRebeldeRepository;
+import com.starwars.rebels_api.repository.RebeldeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ public class RelatorioServiceImpl {
      * Injeção de dependencia
      */
     @Autowired
-    private IRebeldeRepository rebRepository;
+    private RebeldeRepository rebRepository;
 
     /*
      * Retorna um relatório preenchido

@@ -1,11 +1,9 @@
 package com.starwars.rebels_api.modelo;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
+@Entity
 public class Reporte implements Serializable {
 
     private static final long serialVersionUID = 1L;

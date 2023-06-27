@@ -3,7 +3,9 @@ package com.starwars.rebels_api.modelo;
  * Classe especifica para negociações entre rebeldes
  */
 
+import javax.persistence.Entity;
 import java.util.List;
+
 
 public class Trade {
     private Long idRebelde;

@@ -4,6 +4,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 
+@Entity
 @NamedQuery(name = "Localizacao.update", query = "UPDATE Localizacao l SET l.latitude=?1, l.longitude=?2, l.galaxia=?3 WHERE l.id=(SELECT r.localizacao.id FROM Rebelde r WHERE r.id=?4)")
 public class Localizacao implements Serializable {
     private static final long serialVersionUID = 1L;
